@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #0F1035, #365486,#7FC7D9, #DCF2F1);
+    background-size: 300% 300%;
+    animation: colors 10s ease infinite;
+}
+@keyframes colors {
+    0%{ background-position: 0% 50%;
+    }
+50%{
+    background-position:100% 50%;
+}
+100%{
+    background-position: 0% 50%;
+}
+}
+
+/* Header*/
+
+header{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0.8%
+}
+
+h1{
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 20px;
+    font-size: 2.2rem;
+}
+
+.imgIconGitHub{
+   padding-left: 90%;
+   
+}
+
+/* Main*/
+
+.conteinerConteudo{
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+}
+
+#textoCriptografado{
+    font-size: 1.8rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    color: rgba(59, 52, 52, 0.658);
+    width: 25rem;
+    height: 15rem;
+    }
+
+#caixaDecodificador{
+    font-size: 1.5rem;
+    background-color: transparent;
+    height: 10rem;
+    color: rgba(59, 52, 52, 0.658);
+    width: 25rem;
+    height: 15rem;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+/* main 2*/
+
+
+.conteinerbotoes{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+
+}
+
+.botaoCopiar{
+    color: rgb(59, 52, 52);
+    font-family: "Urbanist", sans-serif;
+    padding: 1.5%;
+    font-size: 1.5rem;
+    background-color: #ffffff2a;
+    border: none;
+    cursor: pointer;
+}
+.botaoCopiar:hover{
+    background: rgb(248, 248, 248);
+    color: rgb(10, 8, 8);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.botaoCriptografar{
+    color: rgb(59, 52, 52);
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.5rem;
+    background-color: #ffffff2a;
+    width: 20%;
+    border: none;
+    cursor: pointer;
+}
+.botaoCriptografar:hover{
+    background: rgb(248, 248, 248);
+    color: rgb(10, 8, 8);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.botaoDescriptografar{
+    color: rgb(59, 52, 52);
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.5rem;
+    background-color: #ffffff2a;
+    width: 20%;
+    border: none;
+    cursor: pointer;
+}
+
+.botaoDescriptografar:hover{
+    background: rgb(248, 248, 248);
+    color: rgb(10, 8, 8);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+/* footer*/
+
+.conteudoFooter{
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+}
+
+.meuNome{
+    font-family: "Allura", cursive;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.meuNome:hover{
+    cursor: pointer;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.creditosIcon{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    width: 17rem;
+}
+
+/*Responsividade*/
+
+@media (max-width: 1000px) {
+    h1{
+        padding-left: 1%;
+    }
+    .conteinerConteudo{
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #textoCriptografado{
+        width: 31rem;
+        height: 15rem;
+    }
+
+    #caixaDecodificador{
+        width: 31rem;
+        height: 15rem;
+    }
+
+    .imgIconGitHub{
+        padding-left: 40%;
+     }
+
+     .conteinerbotoes{
+        gap: 5%;
+    }
+
+    .botaoCopiar{
+        padding: 2%;
+    }
+
+    .botaoCriptografar{
+        width: 30%;
+      
+    }
+
+    .botaoDescriptografar{
+        width: 30%;
+    }
+    
+} 
+
+@media (max-width: 720px){
+    h1{
+        font-size: 1.5rem;
+    }
+
+    #textoCriptografado{
+        font-size: 1.8rem;
+        width: 20rem;
+        height: 10rem;
+    }
+
+    #caixaDecodificador{
+        font-size: 1.8rem;
+        width: 20rem;
+        height: 10rem;
+    }
+
+    .meuNome{
+       font-size: 1rem;
+    }
+    
+    .creditosIcon{
+
+        font-size: 1rem;
+    }
+
+    .conteudoFooter{
+        padding-top: 15%;
+    }
+
+    .conteinerbotoes{
+        gap: 1.5%;
+    }
+
+    .botaoCriptografar{
+        width: 32.5%;
+    }
+
+    .botaoDescriptografar{
+        width: 40%;
+    }
+}
+
+@media(max-width: 550px){
+      
+    header{
+        padding-left: 5%;
+    }
+    h1{
+        font-size: 1rem;
+        width: 50%;
+    }
+    .imgIconGitHub{
+        padding-top: 35%;
+        width: 40px;
+     }
+    #textoCriptografado{
+        font-size: 1.2rem;
+        width: 20rem;
+        height: 10rem;
+        padding-left: 30%;
+    }
+
+    #caixaDecodificador{
+        font-size: 1.2rem;
+        width: 20rem;
+        height: 10rem;
+        padding-left: 30%;
+    }
+
+    .conteinerbotoes{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    
+    }
+
+    .botaoCopiar{
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .botaoCriptografar{
+        
+        width: 100%;
+        font-size: 1rem;
+        padding: 2%;
+    }
+
+    .botaoDescriptografar{
+        width: 100%;
+        padding: 2%;
+        font-size: 1rem;
+    }
+}

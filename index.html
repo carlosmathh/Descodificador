@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.all.min.js">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Urbanist:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <header class="conteinerHeader">
+        <h1>Seja Bem Vindo ao Decodificador</h1>
+        <a href="https://github.com/carlosmathh"><img class="imgIconGitHub" src="./assets/github.png" width="60"
+                alt="icone do mascote Github"></a>
+    </header>
+
+    <main>
+        <section class="conteinerConteudo">
+            <textarea readonly id="textoCriptografado">Cripitografia e Descriptografia</textarea>
+            <textarea id="caixaDecodificador" placeholder="Digite algum texto para codificar..."></textarea>
+        </section>
+
+        <section class="conteinerbotoes">
+            <button class="botaoCopiar" onclick="copiar(document.getElementById('textoCriptografado').value)">
+                <img src="./assets/documentos.png" alt="icone copiar" width="25px">
+                Copiar</button>
+            <button class="botaoCriptografar" onclick="criptografar()">
+                <img src="./assets/criptografia.png" alt="icone criptografia" width="25px">
+                Criptografar</button>
+            <button class="botaoDescriptografar" onclick="descriptografar()">
+                <img class="iconBotao" src="./assets/descriptografia.png" alt="icone descritografia" width="25px">
+                Descriptografar</button>
+        </section>
+
+    </main>
+
+    <script src="app.js" defer></script>
+
+    <footer>
+        <div class="conteudoFooter">
+            <p> <a class="meuNome" href="https://www.instagram.com/carlos_mathh/">Carlos Matheus</p>
+            <a class="creditosIcon" href="https://www.flaticon.com/br/" title="github ícones">Ícones
+                criados por
+                Pixel perfect - Flaticon</a>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.all.min.js"></script>
+
+
+</html>
